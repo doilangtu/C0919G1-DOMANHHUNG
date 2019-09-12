@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập điêm học sinh</title>
+</head>
+<body>
+<script>
+    let TenSV ;
+    let inputVatly;
+    let inputHoahoc;
+    let inputSinhhoc;
+    TenSV = prompt('Enter the student name : ')
+    inputSinhhoc = prompt("Enter the  grade Biology : ");
+    inputHoahoc = prompt("Enter the  grade Chemistry :");
+    inputVatly = prompt("Enter the grade Physical : ");
+    let Vatly = parseInt(inputVatly);
+    let Hoahoc = parseInt(inputHoahoc);
+    let Sinhhoc = parseInt(inputSinhhoc);
+    let averagepoint = (Vatly + Hoahoc + Sinhhoc)/3;
+    let Totalscore = Vatly + Hoahoc + Sinhhoc;
+    document.write('Student name : ' +TenSV);
+    document.write('<br>');
+    document.write('Average point is : ' +averagepoint);
+    document.write('<br>')
+    document.write('Total score is : ' +Totalscore);
+</script>
+</body>
+</html>

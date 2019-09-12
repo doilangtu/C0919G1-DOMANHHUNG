@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+</head>
+<body>
+<input type="text" id="varA" value="0">
+<input type="text" id="varB"value="0">
+<br>
+<br>
+<input type="button" onclick="Addtion()" value="Addition(+)"/>
+<input type="button" onclick="Subtraction()" value="Subtraction(-)"/>
+<input type="button"onclick="Multiplication()" value=" Multiplication(x)"/>
+<input type="button" onclick="Division()" value="Division(/)"/>
+<h1 id="result"></h1>
+<script>
+    var a = document.getElementById("varA");
+    var b = document.getElementById("varB");
+    function Addtion(){
+        document.getElementById('result').innerHTML= a.value*1+b.value*1;
+    }
+    function Subtraction(){
+        document.getElementById('result').innerHTML= a.value-b.value;
+    }function Multiplication(){
+        document.getElementById('result').innerHTML= a.value*b.value;
+    }function Division(){
+        var a = document.getElementById("varA").value;
+        var b = document.getElementById("varB").value;
+        var c = Number(a) /Number(b);
+        document.getElementById('result').innerHTML=c;
+    }
+</script>
+</body>
+</html>
