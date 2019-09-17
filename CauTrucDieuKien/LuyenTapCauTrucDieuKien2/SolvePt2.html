@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SolvePT2</title>
+    </title>
+</head>
+<body>
+<form action="">
+    <label for="EnterA">
+        Enter a :
+        <input type="text" id="EnterA"/>
+    </label>
+    <label for="EnterB">
+        Enter b :
+        <input type="text" id="EnterB"/>
+    </label>
+    <label for="EnterC">
+        Enter c :
+        <input type="text" id="EnterC"/>
+        <button type="button" onclick="ShowResultPt()" value="result">Submit</button>
+        <p id="result"></p>
+    </label>
+    <script>
+        let a = document.getElementById("EnterA");
+        let b = document.getElementById("EnterB");
+        let c = document.getElementById("EnterC");
+
+        let x1;
+        let x2;
+
+        function ShowResultPt() {
+            let delta = Math.pow(b.value,2) - 4 * (a.value * c.value);
+            if (a !== 0) {
+                if (delta < 0) {
+                    document.getElementById("result").innerHTML = "Phương trình vô nghiệm";
+                } else if (delta === 0) {
+                    x1 =  -b.value / (2 * a.value);
+                    document.getElementById("result").innerHTML = "Phương trình có nghiệm kép : " + x1;
+                } else {
+                    x1 = -(b.value * 1 + Math.sqrt(delta)) / (2 * a.value);
+                    x2 = -(b.value * 1 - Math.sqrt(delta)) / (2 * a.value);
+                    document.getElementById("result").innerText = "Phương trình có nghiệm là :" + x1 + "\nPhương trình có nghiệm là :" + x2;
+
+                }
+            }
+
+        }
+    </script>
+</form>
+
+
+</body>
+</html>

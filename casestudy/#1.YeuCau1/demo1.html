@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo1</title>
+</head>
+<body>
+<script>
+    let customerName = prompt('Enter Customer Name : ');
+    let isCard = prompt('Enter isCard :');
+    let birthCustomer = prompt('Enter birthCustomer : ');
+    let emailCustomer = prompt('Enter emaiCustomer : ');
+    let addressCustomer = prompt('Enter addressCustomer : ');
+    let typeCustomer = prompt('Enter typeCustomer : ');
+    let discount = prompt('Enter discount : ');
+    let quantityIncluded = prompt('Enter quaitityIncluded :');
+    let rentDays =prompt('Enter rentDays :');
+    let serviceType = prompt('Enter serviceType : ');
+    let totalPay = 500* parseInt(rentDays)*(1-parseFloat(discount)/100);
+    //HTML notification
+    alert(
+        "Information of the customer :\n"+
+            "Name :"+customerName +
+            "\n isCard :"   +   isCard +
+            "\n birthCustorm : " +  birthCustomer +
+            " \n emailCustomer : " +    emailCustomer +
+            "\n Address:" + addressCustomer +
+            "\n Type : " +  typeCustomer +
+            " \n discount : " + discount +
+            " \n quanlitily : " +   quantityIncluded +
+            " \n  TypeService : " + serviceType +
+            " \n TotalPay : " + totalPay
+    )
+</script>
+</body>
+</html>

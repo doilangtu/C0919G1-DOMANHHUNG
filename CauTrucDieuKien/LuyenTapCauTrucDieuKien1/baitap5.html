@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title </title>
+</head>
+<body>
+<form action="">
+</form>
+<form action=""> Name Student :
+    <input type="text" id="NameStudent"/>
+    <br>
+    Test mark 15 minutes:
+    <input type="number" id="TestMark15Minutes"/>
+    Test mark 1 hours :
+    <input type="number" id="TestOneHour">
+    Mid -term score :
+    <input type="number" id="MidScore">
+    Final exam score :
+    <input type="number" id="FinalExamScore">
+    <button type="button" onclick="SemeterSumation()" value="Sumary">Submit</button>
+    <p id="result"></p>
+    <script>
+        function SemeterSumation() {
+            let nameStudent, testMark15minutes, testOneHour, midexamscrore, finalScore, averageScore;
+            nameStudent = document.getElementById('NameStudent');
+            testMark15minutes = document.getElementById('TestMark15Minutes');
+            testOneHour = document.getElementById('TestOneHour');
+            midexamscrore = document.getElementById('MidScore');
+            finalScore = document.getElementById('FinalExamScore');
+            averageScore = 0;
+            averageScore = (testOneHour.value*1 +testMark15minutes.value*1)/3;
+            if (averageScore > 7.5) {
+                document.getElementById('result').innerHTML = "Học sinh "+ nameStudent.value+ "Giỏi";
+            }else if (averageScore >6.5){
+                document.getElementById('result').innerHTML = "Học sinh "+nameStudent.value+ " Khá";
+            }else if(averageScore >=5){
+                document.getElementById('result').innerHTML = "Học sinh "+nameStudent.value+ " TB";
+            }else {
+                document.getElementById('result').innerHTML = "Học sinh "+nameStudent.value+ " x    Yếu";
+            }
+        }
+    </script>
+</form>
+</body>
+</html>

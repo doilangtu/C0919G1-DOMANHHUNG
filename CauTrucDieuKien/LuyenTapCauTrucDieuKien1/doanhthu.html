@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+
+    <label for="StaffName">
+        Tên Nhân Viên :
+        <input type="text" id="StaffName">
+    </label>
+    <label for="Revenue">
+        Doanh thu :
+    </label>
+    <input type="text" id="Revenue" value="0"/>
+    <button type="button" onclick="showAmountReceived()" value="MoneyReceived">Submit</button>
+    <p id="result"></p>
+    <script>
+        //Creat variable
+
+        function showAmountReceived() {
+            let nameStaff, revenue, amountReceived;
+            nameStaff = document.getElementById("StaffName");
+            revenue = document.getElementById("Revenue");
+            amountReceived = 0;
+            if ((revenue.value > 0) && (revenue.value <=10000)) {
+                amountReceived = (revenue.value * 10) / 100;
+            } else if  ((revenue.value > 10000) && (revenue.value <=20000)){
+                amountReceived = (revenue.value * 15) / 100;
+            } else if (revenue.value > 20000) {
+                amountReceived = (revenue.value * 20) / 100;
+            } else {
+                amountReceived = (revenue.value * 5) / 100;
+            }
+            document.getElementById("result").innerHTML = amountReceived;
+        }
+    </script>
+</form>
+</body>
+</html>

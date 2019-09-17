@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Triangle</title>
+</head>
+<body>
+<label for="EnterA">
+    Enter a :
+    <input type="text" id="EnterA"/>
+</label
+<label for="EnterA">
+    Enter b :
+    <input type="text" id="EnterB"/>
+</label>
+<label for="EnterA">
+    Enter c :
+    <input type="text" id="EnterC"/>
+
+</label>
+<input type="button" onclick="showResult()" value="Submit"/>
+<p id="result"></p>
+<script>
+    let a = document.getElementById("EnterA");
+    let b = document.getElementById("EnterB");
+    let c = document.getElementById("EnterC");
+
+    function showResult() {
+        if ((a.value > 0) && (b.value > 0) && (c.value > 0)) {
+            if ((a.value * 1 + b.value * 1) > c.value) {
+                if ((b.value * 1 + c.value * 1) > a.value) {
+                    if ((a.value * 1 + b.value * 1) > b.value) {
+                        document.getElementById("result").innerText = "Đây là 3 cạnh của 1 hình tam giác";
+                    }
+                }
+            }
+        }else {
+            document.getElementById("result").innerText = "Đây không phải là cạnh 1 tam giác";
+        }
+    }
+</script>
+</body>
+</html>

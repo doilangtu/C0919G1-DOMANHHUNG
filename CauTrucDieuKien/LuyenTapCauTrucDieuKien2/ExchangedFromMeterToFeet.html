@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>From-To</title>
+</head>
+<body>
+<form action="">
+    <label for="">
+        <input type="text" id="meter">
+    </label>
+    <button type="button" onclick="showFeet()" value="EnterFeet">Sumit</button>
+    <p id="result"></p>
+    <script>
+        let meter, feet;
+        meter = document.getElementById("meter");
+        feet = 0;
+
+        function showFeet() {
+            feet = meter.value * 3.2808;
+            document.getElementById('result').innerHTML = feet;
+        }
+    </script>
+</form>
+</body>
+</html>

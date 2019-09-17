@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65afb42c-1ed4-499d-9eda-97f2a86699ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="90359668-bbb2-4524-a19f-ea60ca81c26c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bt3_LuyenTap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NamNhuan/NamNhuan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bien,kieudulieuvatoantu/Chuyendoitiente/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Bien,kieudulieuvatoantu/Chuyendoitiente/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,14 +24,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1QgQ4pZXLYEqfts3WF2P0Fmts1Q" />
+  <component name="ProjectId" id="1QijG5WXKEqpEcPMlcMwRKibnqK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CauTrucDieuKien/NamNhuan" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LuyenTapVoiToanTu" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -46,13 +48,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="65afb42c-1ed4-499d-9eda-97f2a86699ba" name="Default Changelist" comment="" />
-      <created>1568189570152</created>
+      <changelist id="90359668-bbb2-4524-a19f-ea60ca81c26c" name="Default Changelist" comment="" />
+      <created>1568260211104</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1568189570152</updated>
-      <workItem from="1568189571638" duration="6529000" />
-      <workItem from="1568250506446" duration="997000" />
+      <updated>1568260211104</updated>
+      <workItem from="1568260212432" duration="3809000" />
     </task>
     <servers />
   </component>
@@ -64,9 +65,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>

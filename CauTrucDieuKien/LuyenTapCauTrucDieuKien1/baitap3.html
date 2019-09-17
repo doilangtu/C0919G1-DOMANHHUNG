@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>bai
+    <meta charset="UTF-8">
+    <title>SoNguyen</title>
+</head>
+<body>
+<input type="text" id="enterNumber" value="0"/>
+<button type="button" onclick="showIntergerN()" value="EnterOfNumber">Summit</button>
+<p id="result"></p>
+<script>
+    let intergerN = document.getElementById('enterNumber');
+    function showIntergerN() {
+        if (intergerN .value*1> 0) {
+        document.getElementById("result").innerHTML = " Số này lớn hơn 0"
+        } else if (intergerN.value*1 < 0) {
+            document.getElementById("result").innerHTML = "Số này nhỏ hơn 0"
+        } else {
+            document.getElementById("result").innerHTML = "Số này bằng 0"
+        }
+    }
+</script>
+</body>
+</html>

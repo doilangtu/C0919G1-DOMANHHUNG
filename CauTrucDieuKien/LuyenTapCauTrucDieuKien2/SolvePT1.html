@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SolvePt1</title>
+</head>
+<body>
+<form action="">
+    <label for="EnterA">
+        Enter a:
+        <input type="text" id="EnterA"/>
+    </label>
+    <br>
+    <label for="EnterB">
+        Enter b :
+        <input type="text" id="EnterB"/>
+    </label>
+    <button type="button" onclick="showSolve()" value="Submit">submit</button>
+    <p id="result"></p>
+    <script>
+        let a = document.getElementById("EnterA");
+        let b = document.getElementById("EnterB");
+        let x = 0;
+
+        function showSolve() {
+            x = -b.value / a.value;
+            if (a.value === 0) {
+                if (b.value === 0) {
+                    document.getElementById("result").innerHTML = "Phương trình có vô số nghiệm";
+                } else {
+                    document.getElementById("result").innerHTML = "Phương trình vô nghiệm";
+                }
+            } else {
+                document.getElementById("result").innerText = "Phương trình có nghiệm duy nhất là :" + x;
+            }
+
+        }
+    </script>
+</form>
+</body>
+</html>

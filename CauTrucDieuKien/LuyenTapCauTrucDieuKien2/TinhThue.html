@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<label for="YourIncome">
+    Your income ís :
+    <input type="text" id="YourIncome">
+</label>
+<input type="button" onclick="showIncome()" value="result"/>
+<p id="result"></p>
+<script>
+    function showIncome() {
+        let incomeOfYou = document.getElementById("YourIncome");
+        let incomeTax = 0;
+        if ((incomeOfYou.value >0) && (incomeOfYou.value <=5000000)){
+            incomeTax = (incomeOfYou.value *5) /100;
+        }else {
+            incomeTax = 25000 + (incomeOfYou.value *5)/100;
+        }
+        document.getElementById("result").innerText ="Số thuế phải đóng là :" +incomeTax;
+    }
+</script>
+<body>
+<!--<script>-->
+<!--    let thuNhap=prompt("nhập vào thu nhập của bạn trong tháng")*1;-->
+<!--    if(thuNhap>=0 && thuNhap<=5000000){-->
+<!--        thue=0+((thuNhap*5)/100);-->
+<!--        alert("số tiền thuế bạn phải đóng là:"+thue);-->
+<!--    }else if(thuNhap>5000000){-->
+<!--        thue=250000+((thuNhap*10)/100);-->
+<!--        alert("số tiền thuế bạn phải đóng là:"+thue);-->
+<!--    }else{-->
+<!--        alert("nhập lại");-->
+<!--    }-->
+<!--</script>-->
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CalculatorSquare</title>
+</head>
+<body>
+<form>
+    <label>
+        Enter edge a :
+    </label>
+    <br>
+    <input type="text" id="EnterSquare" value="0">
+    <button type="button" onclick="showArea()" value="AreaSquare">Submit</button>
+    <p id="result"></p>
+    <script>
+        let a = document.getElementById("EnterSquare");
+        let area = 0;
+
+        function showArea() {
+            area = a.value * a.value;
+            document.getElementById("result").innerHTML = area;
+        }
+    </script>
+</form>
+</body>
+</html>

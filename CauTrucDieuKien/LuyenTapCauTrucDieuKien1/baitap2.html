@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>old</title>
+</head>
+<body>
+<input type="text" id="studentAge">
+<button type="button" onclick="showAge()" value="age">Summit</button>
+<p id="result"></p>
+<script>
+    let oldStudent = document.getElementById("studentAge");
+
+    function showAge(){
+        if(oldStudent.value*1 >=16)
+        {
+            document.getElementById("result").innerHTML = "Được vào lớp 10";
+        }else{
+            document.getElementById("result").innerHTML ="Không được vào lớp 10";
+        }
+    }
+</script>
+</body>
+</html>

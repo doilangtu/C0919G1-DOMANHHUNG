@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giá điện</title>
+</head>
+<body>
+<form action="">
+    <label for="EnterGiaDien">
+        Enter Volt :
+        <input type="text" id="EnterGiaDien"/>
+        <input type="button" onclick="showVolt()" value="Result"/>
+        <p id="result"></p>
+    </label>
+    <script>
+
+
+        function showVolt() {
+            let numberVolt = document.getElementById("EnterGiaDien");
+            let tienDien = 0 ;
+            if((numberVolt.value > 0) && (numberVolt.value <=50)){
+                tienDien = numberVolt.value * 1.678;
+            }else if((numberVolt.value >51) &&(numberVolt.value <=100)){
+                tienDien = numberVolt.value * 1.734;
+            }else if((numberVolt.value > 101) && (numberVolt.value <=200)){
+                tienDien = numberVolt.value * 2.1014;
+            }else if ((numberVolt.value >201) &&(numberVolt.value <=300)){
+                tienDien = numberVolt.value * 2.536;
+            }else {
+                tienDien = numberVolt.value * 2.927;
+            }
+            document.getElementById("result").innerText ="Sô tiền điện gia đình dùng là :" +tienDien + " nghìn đồng";
+        }
+    </script>
+</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Age</title>
+</head>
+<body>
+<form>
+    <label for="EnterAge">
+        Enter Age Of Your :
+        <input type="text" id="EnterAge">
+        <input type="button" onclick="showAge()" value="Submit">
+    </label>
+    <p id="result"></p>
+    <script>
+        let age = document.getElementById("EnterAge");
+        function showAge() {
+            if ((age.value*1 <120) && (age.value*1 >0)){
+                if(age.value)
+                document.getElementById("result").innerText ="Đây là tuổi của con người";
+            }else {
+                document.getElementById("result").innerText =" Không phải tuổi của con người"
+            }
+        }
+    </script>
+</form>
+</body>
+</html>
