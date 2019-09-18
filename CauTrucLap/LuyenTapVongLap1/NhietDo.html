@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NhietDo</title>
+</head>
+<body>
+<script>
+    let temperature = parseInt(prompt("Enter Current Temperature : "));
+    while (temperature <20 || temperature >100){
+
+        if (temperature <20){
+            alert("Tăng nhiệt độ");
+            break;
+        }else if (temperature >100){
+            alert("Hãy giảm nhiệt độ");
+            break;
+        }
+
+    }
+    document.write("Nhiệt độ hiện tại là :" + temperature);
+
+
+</script>
+</body>
+</html>
