@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+</head>
+<body>
+<button type="button" onclick="game()" value="ss">Chơi</button>
+<script>
+    function game() {
+        let a =Math.round(Math.random()*10);
+        let b = parseInt(prompt("Enter number :"));
+        while (a ===b){
+            alert("bạn đoán đúng");
+            break;
+        }
+    }
+</script>
+</body>
+</html>

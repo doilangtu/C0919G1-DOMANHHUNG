@@ -1,32 +1,40 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SoNguyenTo</title>
+    <title> So nguyen to</title>
 </head>
-<body>
 
 <script>
-    let number = 20 ;
-    let count = 0;
-    let n = parseInt(prompt("Enter number prime"));
-    n = 2;
-    let i;
-    if(number >1)
 
-            for (count = 0;count <=20;count +=1){
-                for (i < 3;i< Math.sqrt(n);i+=2){
-                    if(n%i ===0){
-                    count++;
-                    document.write("Số thứ 1 :"+count +"là số nguyên tố :"+n);
-                    }
-
-                }
-
-
+    function checkSNT(val) {
+        for (let i = 2; i <= Math.sqrt(val); i++) {
+            if (val % i === 0) {
+                return false;
+            }
+        }
+        return true;
     }
 
+    let number = 500;
+    let dem = 0;
+    let i = 2;
+    while (true) {
+        if (i == 2) {
+            dem++;
+            document.write(i + "<br>");
+            i++;
+            continue;
+        }
+        if (checkSNT(i)) {
+            dem++;
+        }
+        if (dem === number) {
+            break;
+        }
+        document.write(i + "<br>");
+        i = i + 2;
+    }
 
 </script>
-</body>
 </html>

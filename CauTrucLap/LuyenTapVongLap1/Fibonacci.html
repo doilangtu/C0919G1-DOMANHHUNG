@@ -7,13 +7,23 @@
 <body>
 <script>
     let num = 20;
-    let a =1 , b =0 ,temp ;
-    for (;num>=0;num--){
+    let a = 1, b = 0, temp, c = 0;
+    let result = "";
+    let text = "";
+    for (; num >= 0; num--) {
         temp = a;
         a = a + b;
         b = temp;
+        c += b;
+        result += temp + " ; ";
+        if (temp % 5 === 0) {
+            text += temp + " ; ";
+        }
     }
-    document.write("Giá trị của  :" +b)
+    document.write("Đây là tổng 20 số fibonacci :" + c + "<br>");
+    document.write("Đây là số chia hết cho 5 : " + text + "<br>");
+    document.write("Đây là dãy số Fibonacci : " + result);
+
 </script>
 </body>
 </html>
