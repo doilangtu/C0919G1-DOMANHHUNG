@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoNguyenTo</title> 
+</head>
+<body>
+<form>
+    <label>So nguyen tố</label>
+    <input type="text" id="inputPrime" oninput="isPrime(this.value)"
+            placeholder="number"/>
+    <p>Kết quả : <span id="result"></span></p>
+</form>
+<script>
+    function isPrime(number) {
+        number = parseInt(number);
+        let checkPrime = true;
+        if (number <2){
+            checkPrime = false;
+        }
+        else  if ( number ==2){
+            checkPrime =true;
+        }
+        else if (number%2 == 0){
+            checkPrime = false;
+        } else {
+            for (let i = 3;i<Math.sqrt(number);i+=2){
+            if (number%i == 0){
+                    checkPrime = false;
+                    break;
+            }}
+        }
+        if (checkPrime == true){
+            document.getElementById("result").innerText = "Số nguyên tố là :" +number;
+        }else {
+            document.getElementById("result").innerText = "Số ko nguyên tố là :" +number;
+        }
+        }
+
+
+</script>
+</body>
+</html>

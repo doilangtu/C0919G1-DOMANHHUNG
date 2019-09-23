@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo1</title>
+</head>
+<body>
+<script>
+    let checkValiDate =false;
+    let emailCustomer;
+    let birthCustomer ;
+
+    // let customerName = prompt("Enter Customer Name :" );
+    // let isCard = prompt("Enter isCard :");
+    do {
+        checkValiDate = true;
+        birthCustomer = prompt("Enter birthCustomer (dd/MM/yyyy) : ");
+        if (birthCustomer.charAt(2) !== "/" || birthCustomer.charAt(5) !== "/") {
+            alert("Birthday is invalid !!! Please try again");
+            continue;
+        }
+        let day = birthCustomer.substring(0, 2);
+        let month = birthCustomer.substring(3, 5);
+        let year = birthCustomer.substring(6, 10);
+        if (!isNaN(day) && !isNaN(month) && !isNaN(year)) {
+            day = Number.parseFloat(day);
+            month = Number.parseFloat(month);
+            year = Number.parseFloat(year);
+        }
+        if (Number.isInteger(day) && Number.isInteger(month) && Number.isInteger(year)) {
+            if (day > 0 && day < 30 && month > 0 && month < 13 && year > 1950 && year > 2019) {
+                checkValiDate = true;
+            }
+        }
+        if (!checkValiDate){
+            alert("Birth is invaild !!! Please try again");
+        }
+    }while (!checkValiDate)
+
+    do{
+        checkValiDate = true;
+        let countDoc = 0;
+        let countAt = 0;
+        emailCustomer = prompt("Enter emaiCustomer : ");
+        for (let i = 0;i<emailCustomer.length;i++){
+            if (emailCustomer.charAt(i) == "@"){
+                countAt++;
+            }
+            if (emailCustomer.charAt(i) =="."){
+                countDoc++;
+            }
+        }
+        if (countAt !== 1 || countDoc < 1){
+            checkValiDate = false;
+            alert("Email invalid !! Please Try Again");
+        }
+    }
+
+    while (!checkValiDate)
+
+    // let addressCustomer = prompt("Enter addressCustomer : ");
+    // let typeCustomer = prompt("Enter typeCustomer : ");
+    // let discount = prompt("Enter discount : ");
+    // let quantityIncluded = prompt("Enter quaitityIncluded :");
+    // let typeRoom = prompt("Enter type room : ")
+    // let rentDays =prompt("Enter rentDays :");
+    // let serviceType = prompt("Enter serviceType : ");
+    // let totalPay = 500* parseInt(rentDays)*(1-parseFloat(discount)/100);
+    //HTML notification
+    alert(
+        // "Information of the customer :\n"+
+        // "Name :"+customerName +
+        // "\n isCard :"   +   isCard +
+        "\n birthCustorm : " +  birthCustomer +
+        " \n emailCustomer : " +    emailCustomer
+        // "\n Address:" + addressCustomer +
+        // "\n Type : " +  typeCustomer +
+        // " \n discount : " + discount +
+        // " \n quanlitily : " +   quantityIncluded +
+        // " \n  TypeService : " + serviceType +
+        // " \n TotalPay : " + totalPay
+    )
+</script>
+</body>
+</html>
