@@ -8,21 +8,28 @@
 <form>
     <p id="result"></p>
     <script>
+
         let english = ["pigeon", "feather", "eagle", "talon", "nest", "owl", "falcon"];
 
         let vietNam = ["bồ câu", "lông vũ", "đại bàng", "móng vuốt", "cái tổ", "cú mèo", "chim cưng"];
         let value = prompt("Enter words found is :");
+        function showBird() {
+            let flag =false;
         for (let i = 0; i < english.length; i++) {
-            if (value == english[i]) {
+            if (value === english[i]) {
                 alert(
                     "Word  " + english[i]+
                     "\nNghĩa nó là :" + vietNam[i]);
-
-            }else {
-                alert("The word is not found");
-                break;
-            }
+                flag = true;
+            }}
+         if(!flag){
+            alert("The Words is not found");
         }
+        }
+        value = showBird();
+
+
+
     </script>
 </form>
 </body>

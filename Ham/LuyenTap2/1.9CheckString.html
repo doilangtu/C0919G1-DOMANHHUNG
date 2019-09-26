@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckString</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let result ="";
+    let inputArray = prompt("Enter number element");
+    let inputNumber = prompt("Enter check number :");
+
+function checkNumber(arr,c) {
+    for (let i = 0; i < inputArray; i++) {
+        array.push(prompt("Enter number :" + (i + 1)));
+    }
+        let dem = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (c === array[i]) {
+                dem ++;
+        }
+        if (c===0){
+            return - 1;
+        }
+    }
+return  dem;
+}
+    let dem=checkNumber(array,inputNumber);
+alert("Số lần xuất hiện là "+dem);
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+Nguyen Trung Nam 4:02 PM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<SCRIPT>
+    let MyDate = function(day, month, year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+        this.getDay = function() {
+            return this.day;
+        };
+        this.getMonth = function() {
+            return this.month;
+        };
+        this.getYear = function() {
+            return this.year;
+        };
+        // this.toString  =function () {
+        //     return this.day+"/" +this.month+"/" +this.year;
+        //
+        // };
+        this.setDay = function(day) {
+            this.day  = day;
+        };
+        this.setMonth = function(month) {
+            this.month  = month;
+        };
+        this.setYear = function(year) {
+            this.year  = year;
+        };
+    };
+    let date = new MyDate();
+    let a=parseInt(prompt("nhập vào ngày"));
+    let b=parseInt(prompt("nhập vào tháng"));
+    let c=parseInt(prompt("nhập vào năm"));
+    date.setDay(a);
+    date.setMonth(b);
+    date.setYear(c);
+    let day = date.getDay(a); // 2
+    let month = date.getMonth(b); // 2
+    let year = date.getYear(c); // 2007
+    alert(day+"/"+month+"/"+year);
+    // alert(toString(a,b,c));
+</SCRIPT>
+</body>
+</html>

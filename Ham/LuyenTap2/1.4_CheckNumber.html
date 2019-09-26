@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckNumber</title>
+</head>
+<body>
+<script>
+    let x = prompt("Enter number :");
+    function checkNumber() {
+        let flag = false;
+       if(isNaN(x)){
+           alert(x + " is not a number");
+           flag = true;
+       }
+        if(!flag){
+            alert(x + ' is a number');
+        }
+    }
+    x= checkNumber();
+
+</script>
+</body>
+</html>

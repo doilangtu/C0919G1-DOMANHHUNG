@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu Cầu 4</title>
+</head>
+<body>
+<script>
+    let customer = [];
+let choose = prompt(
+    "1.Add New Customer :"+
+        "\n 2.Delete Customer :"
+);
+    switch(choose){
+        case "1":
+            let inputCustomer = prompt("Enter number customer you want to add");
+           for (let i = 0;i < inputCustomer;i++){
+               customer.push(prompt("Name Customer "+(i+1)+" is :"));
+           }
+           let result = "";
+            for (let i = 0;i < customer.length;i++){
+                result += "\n Vị khách thứ :" + (i+1) +" . " +customer[i];
+            }
+            customer.sort();
+            customer.reverse();
+            alert(result);
+
+            for (let i = 0;i < customer.length;i++){
+                result += "\n" + (i+1) +" . " +customer[i];
+            }
+            alert(result);
+            break;
+
+        case "2":
+            let arrrayNameCustomer = ["Hoa","Thuy","Mai","Trang","Ngoc","Lan","Huế","Huệ","Tâm","Kiều"];
+            let del = prompt(
+                "1."+arrrayNameCustomer[0]+"\n"+
+                "2."+arrrayNameCustomer[1]+"\n"+
+                "3."+arrrayNameCustomer[2]+"\n"+
+                "4."+arrrayNameCustomer[3]+"\n"+
+                "5."+arrrayNameCustomer[4]+"\n"+
+                "6."+arrrayNameCustomer[5]+"\n"+
+                "7."+arrrayNameCustomer[6]+"\n"+
+                "8."+arrrayNameCustomer[7]+"\n"+
+                "9."+arrrayNameCustomer[8]+"\n"+
+                "10."+arrrayNameCustomer[9]+"\n"
+            );
+            let total = "";
+            for (let i = 0;arrrayNameCustomer.length;i++){
+                if (del == (i+1)){
+                    arrrayNameCustomer.splice(i,1);
+                }
+                if (i>8){
+                    break;
+                }
+                total+='\n'+(i+1)+arrrayNameCustomer[i];
+            }
+            alert(total);
+            break;
+
+        default:
+            alert("Fail");
+            break;
+    }
+</script>
+</body>
+</html>

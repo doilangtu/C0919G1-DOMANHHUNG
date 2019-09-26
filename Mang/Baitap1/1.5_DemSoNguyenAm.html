@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DémoNguyenAm</title>
+</head>
+<body>
+<script>
+    let dem =0;
+    let demSoAm = 0;
+    let soNguyen = new Array();
+    do {
+        let input =parseInt(prompt("Enter number is :"));
+        soNguyen.push(input);
+        dem++;
+    }while(dem<5)
+    for (let i = 0;i<soNguyen.length;i++){
+        if (soNguyen[i]<0){
+            document.write("Sô nguyên âm là :" +soNguyen[i] +"<br>");
+            demSoAm++;
+        }
+    }
+    document.write("Có tất cả : "+demSoAm);
+</script>
+</body>
+</html>

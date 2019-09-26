@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ĐảoNgưocPhanTu</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+    let soNguyen = new Array();
+    let dem = 0;
+    let text = "";
+    do{
+        let input = parseInt(prompt("Enter number is :"));
+        soNguyen.push(input);
+        dem++;
+    }while (dem<4)
+    for(let index in soNguyen){
+        document.write(soNguyen[index] +"<br>")
+    }
+    for (let index = soNguyen.length -1;index>=0;index--){
+        soNguyen[index]+1;
+    text += soNguyen[index];
+
+    }
+    document.getElementById("result").innerText="So dao la :"+text+ ";";
+</script>
+</body>
+</html>

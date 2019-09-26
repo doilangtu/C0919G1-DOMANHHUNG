@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FoundNumberAvergage</title>
+</head>
+<body>
+<script>
+    let x = [2,4,5,2,23,523,2,323,4242,42422,131];
+    let max = x[0];
+    let index = 0;
+    let tong = 0;
+    let dem = 0;
+    for (let i = 1;i<x.length;i++){
+        if (x[i]>max){
+            max = x[i];
+            index = i ;
+        }
+        tong +=x[i];
+        dem = i;
+    }
+    alert("Số lớn nhất là  "+max+" tại  "+index+ " \nTrung bình cuả mảng là : " +tong/dem);
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoNguyen</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+    let soNguyen = [5,23,54,3,2,7,343,23,6,232];
+    let dem = 0;
+    let index = 0;
+    for(let i = 1;i <soNguyen.length;i++){
+        if(soNguyen[i]>=10) {
+            document.write("Số lớn hơn và bằng 10 là :"+soNguyen[i]+" tại " +i +"<br>");
+            dem ++;
+        }
+        document.getElementById("result").innerText = "Có" +dem+" số lớn hơn hoặc băng 10";
+        }
+</script>
+</body>
+</html>

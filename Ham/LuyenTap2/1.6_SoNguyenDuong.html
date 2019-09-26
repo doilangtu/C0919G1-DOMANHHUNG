@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckNumber</title>
+</head>
+<body>
+<script>
+    let x = prompt("Enter number :");
+    function checkPosition(){
+        let flag = false;
+        if((isNaN(x)) && x >=0){
+            alert(x + " không là một số nguyên duoưng ");
+            flag = true;
+        }
+        if(!flag){
+            alert(x + "là một số nguyên dương");
+        }
+    }
+    x= checkPosition();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    let result = "";
+    function reversonNumberArray (val){
+        val.reverse();
+        return val;
+    }
+   let randomNumber = [];
+
+        let inputArray = prompt("Enter random number");
+        for (let i = 0;i<inputArray;i++){
+            randomNumber.push(prompt("Số thứ "+(i+1)+"là :"));}
+
+        for (let i =0;i<randomNumber.length;i++){
+            result += "\n" +(i+1)+ randomNumber[i];
+        }
+
+
+   document.getElementById("demo").innerText= result;
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BìnhPhuong</title>
+</head>
+<body>
+<label>Bán kính hình tròn là :</label>
+<input type="text" id="EnterRadius" placeholder="radius"
+       oninput="showRadiusCoverter(this.value)"
+       onchange="showRadiusCoverter(this.value)"/>
+<p><span id="CircleArea"></span></p>
+
+<script>
+    const PI= 3.14;
+    let radius = document.getElementById("EnterRadius");
+    function showRadiusCoverter(valNum) {
+        valNum = parseFloat(valNum);
+document.getElementById("CircleArea").innerText ="Diện tích hình tròn :" +Math.pow(valNum,2)*PI;
+    }
+</script>
+<script>
+</script>
+</body>
+</html>

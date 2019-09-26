@@ -9,8 +9,25 @@
     <label>
         Chuyển đổi đơn vị
     </label>
-    <input type="text" id="inputNumberExchanged" oninput="isMesurementConverter(thís.value)"/>
+    <input type="text" id="inputNumberExchanged"
+           placeholder="meter"/>
+    <input type="button" onclick="exchangedMeter()" value="Meter"/>
+    <input type="button" onclick="exchangedFooter()" value="Foot"/>
+    <p id="meter"></p>
+    <p id="foot"></p>
 </form>
-public static double footToMeter(double foot)>
+<script>
+    let value = document.getElementById("inputNumberExchanged");
+
+    function exchangedFooter(foot) {
+        foot = value.value * 3.279;
+        document.getElementById("meter").innerText = value.value+" feed là : " + foot +" mét";
+    }
+
+    function exchangedMeter(meter) {
+        meter = value.value * 0.305;
+        document.getElementById("foot").innerText = value.value+" mét là : " + meter +" feed";
+    }
+</script>
 </body>
 </html>

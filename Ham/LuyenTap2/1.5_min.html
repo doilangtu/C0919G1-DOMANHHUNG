@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>CheckMinNumber</title>
+</head>
+<body>
+<script>
+    let a= parseInt(prompt("Enter a :"));
+    let b = parseInt(prompt("Enter b :"));
+    let c = parseInt(prompt("Enter c :"));
+    function checkNumber() {
+        if (a<b && a<c){
+            alert("Số nhỏ nhất là a :"+a);
+        }
+        if (b<a &&b<c){
+            alert("Số nhỏ nhất là b :"+b);
+        }
+        if(c<a &&c <b){
+            alert("Số nhỏ nhất là c :" +c);
+        }
+    }
+    checkNumber();
+</script>
+</body>
+</html>
