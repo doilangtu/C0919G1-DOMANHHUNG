@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrListCustomers =[];
+   function addNewCutomer() {
+       let customerName = prompt("Enter Customer Name :" );
+       let isCard = prompt("Enter isCard :");
+       let birthCustomer = prompt("Enter birthCustomer : ");
+       let emailCustomer = prompt("Enter emaiCustomer : ");
+       let addressCustomer = prompt("Enter addressCustomer : ");
+       let typeCustomer = prompt("Enter typeCustomer : ");
+       let discount = prompt("Enter discount : ");
+       let quantityIncluded = prompt("Enter quaitityIncluded :");
+       let typeRoom = prompt("Enter type room : ");
+       let rentDays =prompt("Enter rentDays :");
+       let serviceType = prompt("Enter serviceType : ");
+     arrListCustomers.push(customerName,isCard,birthCustomer,emailCustomer,addressCustomer,typeCustomer,discount,quantityIncluded,
+         typeCustomer,rentDays,typeRoom,serviceType);
+   }
+   function displayInfomationCustomer() {
+       let result = "";
+       for(let i = 1;i<arrListCustomers.length;i++){
+           result = (i+1)+"."+arrListCustomers[i];
+       }
+       alert(result);
+   }
+    function displayMainMenu() {
+        let del = prompt(
+            "1. Add New Customer"+"\n"+
+            "2. Display Information Customer"+"\n"+
+            "3. Edit Information Customer"+"\n"+
+            "4. Delete Customer"+"\n"+
+            "5. Exit"
+        );
+        return del;
+    }
+    function showName() {
+        let arrayA =[];
+        let menu2 = prompt(
+            "1. Name customer :"+customerName
+        )
+
+    }
+
+switch(displayMainMenu()){
+    case "1":
+         let add =addNewCutomer(arrListCustomers);
+        displayMainMenu(add);
+        break;
+    case "2":
+            function infomationCutomers() {
+                prompt()
+            }
+        break;
+    default:
+    alert("fail");
+    break;
+}
+    // alert(
+    //     "Information of the customer :\n"+
+    //     "Name :"+customerName +
+    //     "\n isCard :"   +   isCard +
+    //     "\n birthCustorm : " +  birthCustomer +
+    //     " \n emailCustomer : " +    emailCustomer +
+    //     "\n Address:" + addressCustomer +
+    //     "\n Type : " +  typeCustomer +
+    //     " \n discount : " + discount +
+    //     " \n quanlitily : " +   quantityIncluded +
+    //     " \n  TypeService : " + serviceType +
+    //     " \n TotalPay : " + totalPay
+    // )
+
+</script>
+</body>
+</html>

@@ -46,13 +46,14 @@ let choose = prompt(
                 "10."+arrrayNameCustomer[9]+"\n"
             );
             let total = "";
-            for (let i = 0;arrrayNameCustomer.length;i++){
+            for (let i = 0;i<arrrayNameCustomer.length;i++){
                 if (del == (i+1)){
                     arrrayNameCustomer.splice(i,1);
                 }
                 if (i>8){
                     break;
                 }
+
                 total+='\n'+(i+1)+arrrayNameCustomer[i];
             }
             alert(total);

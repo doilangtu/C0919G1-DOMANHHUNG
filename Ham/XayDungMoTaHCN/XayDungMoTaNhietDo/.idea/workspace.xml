@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5acd4ffd-0b7f-45e2-aa90-4dae8a75c1e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../DoiTuong/FunnyCircle/.idea/FunnyCircle.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DoiTuong/FunnyCircle/Circle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DoiTuong/Mobile/mobile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DoiTuong/dinhnghia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DoiTuong/run.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DoiTuong2/Apple-Human/HumnanEatApple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DoiTuong2/Apple-Human/dingnhia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DoiTuong2/Apple-Human/run.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DoiTuong2/Den-CongTac/congtac.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DoiTuong2/Den-CongTac/den-congtac.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DoiTuong2/Den-CongTac/dinhnghia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DoiTuong2/GameDiChuyen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DoiTuong2/run.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../DoiTuong2/Đèn Pin/denpin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../casestudy/#5.YeuCau5/.idea/#5.YeuCau5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DoiTuong/Circle.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DoiTuong/Circle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../casestudy/#4.YeuCau4/YeuCau4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../casestudy/#4.YeuCau4/YeuCau4.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1RXHEPYc0DMW5ObN6tUsGztxHYd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../DoiTuong/FunnyCircle" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5acd4ffd-0b7f-45e2-aa90-4dae8a75c1e0" name="Default Changelist" comment="" />
+      <created>1569806407113</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569806407113</updated>
+      <workItem from="1569806408469" duration="6677000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
