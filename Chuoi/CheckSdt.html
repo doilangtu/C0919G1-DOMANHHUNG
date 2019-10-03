@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckSdt</title>
+</head>
+<body>
+<script>
+    let input = prompt("Enter MobilePhone :");
+    let exp = /^[0-9]{3}(?:-[0-9]{8})?$/;
+    if (exp.test(input)){
+        alert("This is MobilePhone");
+    }else {
+        alert("No MobilePhone");
+    }
+</script>
+</body>
+</html>

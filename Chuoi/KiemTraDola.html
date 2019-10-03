@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KiemTradola</title>
+</head>
+<body>
+<script>
+    let inputString = prompt("Enter string");
+    let exp = /^[0-9]{5}(?:-[0-9]{4})?$/;
+    if (exp.test(inputString)){
+        alert("seri-dolami");
+    }else {
+        alert("khong phai seri-dolami");
+    }
+</script>
+</body>
+</html>

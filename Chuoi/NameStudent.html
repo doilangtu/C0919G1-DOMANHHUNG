@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NameStudent</title>
+</head>
+<body>
+<script>
+    let name = prompt("Enter name student");
+    let exp = /^([A]|[C]|[P])([0-9]{4})([G]|[H]|[I]|[K]|[L]|[M])$/;
+    if (exp.test(name)){
+        alert("This so thu tu hoc sinh :" +name);
+    }else {alert("Khong Phai");}
+</script>
+</body>
+</html>
