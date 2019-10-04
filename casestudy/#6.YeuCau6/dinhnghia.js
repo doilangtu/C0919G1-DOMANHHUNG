@@ -79,3 +79,89 @@ let Customer = function () {
 
 
 };
+let Employees =function () {
+    this.setEmployeesName =function (EmployeesName) {
+        this.EmployeesName =EmployeesName;
+    };
+    this.getEmployeesName =function () {
+        return  this.EmployeesName ;
+    };
+    this.setBirthdayEmployees =function (BirthdayEmployees) {
+        this.BirthdayEmployees =BirthdayEmployees;
+    };
+    this.getBirthdayEmployees =function () {
+        return  this.BirthdayEmployees ;
+    };
+    this.setIsCardEmployees =function (IsCardEmployees) {
+        this.IsCardEmployees =IsCardEmployees;
+    };
+    this.getIsCardEmployees =function () {
+        return  this.IsCardEmployees ;
+    };
+    this.setPhoneNumberEmployees =function (PhoneNumberEmployees) {
+        this.PhoneNumberEmployees =PhoneNumberEmployees;
+    };
+    this.getPhoneNumberEmployees =function () {
+        return  this.PhoneNumberEmployees ;
+    };
+    this.setEmailEmployees =function (EmailEmployees) {
+        this.EmailEmployees =EmailEmployees;
+    };
+    this.getEmailEmployees =function () {
+        return  this.EmailEmployees ;
+    };
+    this.setAcademicLevelEmployees =function (AcademicLevelEmployees) {
+        this.AcademicLevelEmployees =AcademicLevelEmployees;
+    };
+    this.getAcademicLevelEmployees =function () {
+        return  this.AcademicLevelEmployees ;
+    };
+    this.setJobPositionEmployees =function (JobPositionEmployees) {
+        this.JobPositionEmployees =JobPositionEmployees;
+    };
+    this.getJobPositionEmployees =function () {
+        return  this.JobPositionEmployees ;
+    };
+    this.setActualLaborDay =function (ActualLaborDay) {
+        this.ActualLaborDay =ActualLaborDay;
+    };
+    this.getActualLaborDay =function () {
+        return this.ActualLaborDay ;
+    };
+    this.setWorkingParts =function (WorkingParts) {
+        this.WorkingParts = WorkingParts;
+    };
+    this.getWorkingParts =function () {
+         return this.WorkingParts ;
+    };
+
+    this.getSalaryEmployees =function () {
+
+        let subsidize = 0;
+        let positionJob =0;
+        if(this.getJobPositionEmployees() ==="Lễ tân"){
+            positionJob = 5000;
+        }else if (this.getJobPositionEmployees()==="phục vụ"){
+            positionJob =4000;
+        }else if (this.getJobPositionEmployees()==="chuyên viên"){
+            positionJob =6000;
+        }else if (this.getJobPositionEmployees()==="Giám sát"){
+            positionJob =8000;
+        }else if (this.getJobPositionEmployees()==="Quản lí"){
+            positionJob = 7500;
+        }else if (this.getJobPositionEmployees()==="giám đốc"){
+            positionJob =10000;
+        }else {positionJob =3000;}
+        if (this.getWorkingParts() ==="Manager"){
+            subsidize =500;
+        }
+        if (this.getWorkingParts()==="Sale"){
+            subsidize =300;
+        }
+        else {
+            subsidize =200;
+        }
+            return  (positionJob +subsidize)/26 *parseFloat(this.getActualLaborDay()) ;
+    };
+
+};
