@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt4</title>
+</head>
+<body>
+<script>
+    let result = 15;
+    let n = prompt("Enter n :");
+    let y = 0;
+    for (let i = 0;i<=n;i++){
+
+        y+=1;
+        result += Math.pow(-1,y)*(1/y);
+    }
+    alert(y);
+    alert(Math.round(result));
+</script>
+</body>
+</html>

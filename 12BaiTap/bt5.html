@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giaithua</title>
+</head>
+<body>
+<script>
+
+    let num = parseInt(prompt("Enter num"));
+    let total = 0;
+
+
+    function TinhGT(num) {
+        let result = 1;for (let i = 1; i <= num; i++) {
+            result *= i;
+
+        }
+        return result;
+    }
+
+    for (let i = 1; i <= num; i++) {
+        total += 1 / TinhGT(2 * i - 1);
+    }
+    document.write(total);
+
+
+</script>
+</body>
+</html>

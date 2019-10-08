@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuôix</title>
+</head>
+<body>
+<script>
+let result = "";
+
+let str = prompt("Enter string :");
+str.trim().toLowerCase();
+for (let i = 0;i<str.length;i++) {
+    result += str.charAt(i) + "<br>";
+
+};
+
+x= document.write(result);
+for (let i = 0;i<x.length;i++){
+    let num = 0;
+    if (!str.charAt(i) ===" " && !str.charAt(i+1)===" "){
+        num+=1;
+    }
+
+}
+function countWords(s){
+    s = s.replace(/(^\s*)|(\s*$)/gi,"");//exclude  start and end white-space
+    s = s.replace(/[ ]{2,}/gi," ");//2 or more space to 1
+    s = s.replace(/\n /,"\n"); // exclude newline with a start spacing
+    return s.split(' ').filter(function(str){return str!="";}).length;
+    //return s.split(' ').filter(String).length; - this can also be used
+}
+document.write(num);
+</script>
+</body>
+</html>

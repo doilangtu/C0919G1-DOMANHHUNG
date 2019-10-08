@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt11</title>
+</head>
+<body>
+<script>
+    let checknum =/^[\d]$/;
+    let result = "";
+    let array =[];
+
+
+let i = 0;
+    let input = prompt("Enter number of array");
+    for (let i = 0;i<input;i++){
+        array.push(prompt("nhap so :"+(i+1)));
+        while (!checknum.test(array[i])){
+            alert("x");
+            array.push(prompt("nhap so :"+(i+1)));
+            break;
+    }
+    }
+
+
+    for (let i = 0;i<array.length;i++){
+        result+="\n" +(i+1)+ "so number la:"+array[i];
+    }
+    document.write(result);
+</script>
+</body>
+</html>

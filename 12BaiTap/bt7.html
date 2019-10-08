@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng-Tích</title>
+</head>
+<body>
+<script>
+    let num = prompt("Enter a");
+    let  sum = 0;
+    let adv = 0;
+    function TinhTong(num) {
+        for(let i = 0 ;i<=num.length;i++){
+            sum += num.charAt(i)*1;
+        }
+        return sum;
+    }
+    function TinhTich(num){
+        for (let i = 0;i<=num.length;i++){
+            adv *=num.charAt(i)*1;
+        }
+        return adv;
+    }
+    document.write(TinhTong(num));
+    document.write(TinhTich(num));
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UCLN-BCNN</title>
+</head>
+<body>
+<script>
+    let a,b;
+    function UCLN(x,y) {
+        while (x!=y){
+            if (x>y)
+                x = x - y;
+            else y = y-x;
+        }
+return x;
+    }
+    a = prompt("Enter number a :");
+    b = prompt("Enter number b :");
+                document.write("Ước chung lớn nhất  là :"+UCLN(a,b));
+                document.write("Bội chung nhở nhất  là :"+a*b/UCLN(a,b));
+</script>
+</body>
+</html>

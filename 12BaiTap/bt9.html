@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo2"></p>
+<script>
+  let result = "";
+
+let inputArray = [];
+  let input = prompt("Enter number");
+
+  for (let i =0;i<input;i++){
+      inputArray.push(prompt("Số lượng vị khách nhập vào :" +(i+1)));
+  }
+  for (let i = 0;i<inputArray.length;i++) {
+      result += "\n" + (i + 1) + inputArray[i];
+
+  }
+  let filter =/^[A-Z]$/;
+  for (let i = 0;i<inputArray.length;i++){
+  if(filter.test(inputArray[i])){
+      document.write(inputArray[i].toLowerCase()+"<br>");
+  }else {
+      document.write(inputArray[i].toUpperCase());
+  }
+  };
+
+
+  result =inputArray.reverse().toString().toUpperCase();
+  let a = result.toLocaleLowerCase();
+  document.getElementById("demo").innerText ="chữ in hóa:" + result;
+  document.getElementById("demo2").innerText = "chữ in thường "+a;
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

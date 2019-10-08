@@ -192,37 +192,37 @@ function chooseInformationCustomer() {
         let editInfo = prompt("Enter Info You Want To Change");
         switch (indexPropety) {
             case 0:
-                arrListCustomers[indexCus].getNameCustomer(editInfo) ;
+                arrListCustomers[indexCus].setNameCustomer(editInfo) ;
                 break;
             case 1:
-                arrListCustomers[indexCus].getIsCard(editInfo);
+                arrListCustomers[indexCus].setIsCard(editInfo);
                 break;
             case 2:
-                arrListCustomers[indexCus].getBirthDayCustomer(editInfo);
+                arrListCustomers[indexCus].setBirthDayCustomer(editInfo);
                 break;
             case 3:
-                arrListCustomers[indexCus].getEmail(editInfo);
+                arrListCustomers[indexCus].setEmail(editInfo);
                 break;
             case 4:
-                arrListCustomers[indexCus].getAddress(editInfo);
+                arrListCustomers[indexCus].setAddress(editInfo);
                 break;
             case 5:
-                arrListCustomers[indexCus].getTypeCustomer(editInfo);
+                arrListCustomers[indexCus].setTypeCustomer(editInfo);
                 break;
             case 6:
-                arrListCustomers[indexCus].getDiscount (editInfo);
+                arrListCustomers[indexCus].setDiscount (editInfo);
                 break;
             case 7:
-                arrListCustomers[indexCus].getAcompany(editInfo);
+                arrListCustomers[indexCus].setAcompany(editInfo);
                 break;
             case 8:
-                arrListCustomers[indexCus].getTypeRoom(editInfo);
+                arrListCustomers[indexCus].setTypeRoom(editInfo);
                 break;
             case 9:
-                arrListCustomers[indexCus].getRentDays(editInfo);
+                arrListCustomers[indexCus].setRentDays(editInfo);
                 break;
             case 10:
-                arrListCustomers[indexCus].getTypeService(editInfo);
+                arrListCustomers[indexCus].setTypeService(editInfo);
                 break;
             default:
                 alert("Fail");
@@ -351,33 +351,36 @@ function chooseInformationEmployee() {
         displayMenuEmployess();
     }
     function displayEmployees() {
-        let result ="";
-        for (let i = 0;i<listEmployees.length;i++){
+        let result = "";
+        for (let i = 0; i < listEmployees.length; i++) {
             result += "\n" + (i + 1) + "Name : " + listEmployees[i].getEmployeesName() +
                 ";IsCard : " + listEmployees[i].getIsCardEmployees();
         }
+        console.log("vt3");
         result += "\n" + (listEmployees.length + 1) + ".Back to Menu";
-        let chooseDisplayInfo  =prompt(result);
-        if (chooseDisplayInfo.toString()!==((listEmployees.length+1).toString())){
-            if (!checkDisplaySalary && !checkDeleteEmployees){
-                console.log("-7");
-            displayInformationEmployees(Number.parseInt(chooseDisplayInfo)-1);}
-            else if (checkDeleteEmployees){
-                console.log("-6");
-                deleteEmployees(Number.parseInt(chooseDisplayInfo)-1);
+        let chooseDisplayInfo = prompt(result);
+        if (chooseDisplayInfo.toString() !== (listEmployees.length + 1).toString()) {
+            console.log("vt4");
+            if (!checkDeleteEmployees && !checkDisplaySalary) {
+                console.log("4");
+                displayInformationEmployees(Number.parseInt(chooseDisplayInfo) - 1);
+            } else if (chooseDeleteEmployees){
+                console.log("vt6");
+                deleteEmployees(Number.parseInt(chooseDisplayInfo) - 1);
+
+            }else {
+                console.log(checkDisplaySalary);
+                console.log("5");
+                displayTotalSalary(Number.parseInt(chooseDisplayInfo) - 1);
             }
-            else {
-                console.log("-5");
-                displayTotalSalary(Number.parseInt(chooseDisplayInfo)-1);
-            }
-        }else {
-            console.log("-4");
-            checkDeleteEmployees =false;
-            checkEditEmployees =false;
+        } else {
+            console.log("vt5");
+            console.log("6");
             checkDisplaySalary =false;
+            checkDeleteEmployees = false;
+            checkEditEmployees = false;
             displayMenuEmployess();
         }
-
     }
     function displayInformationEmployees(index) {
         if ( checkEditEmployees ) {
@@ -401,15 +404,15 @@ function chooseInformationEmployee() {
             }
         }else {
         alert("Information of Employees in Hotel :"
-        +"\n1. Employees Name :" +listEmployees[index].getEmployeesName()+
-        "\n2. Birthday Employees  :" +listEmployees[index].getBirthdayEmployees()+
-        "\n3. Is Card Employees  :" +listEmployees[index].getIsCardEmployees()+
-        "\n4. Phone NumberEmployees  :" +listEmployees[index].getPhoneNumberEmployees()+
-        "\n5. Phone Email Employees  :" +listEmployees[index].getEmailEmployees()+
-        "\n6. Academic LevelEmployees  :" +listEmployees[index].getAcademicLevelEmployees()+
-        "\n7. Job Position Employees  :" +listEmployees[index].getJobPositionEmployees()+
-        "\n8. Actual Labor Day  :" +listEmployees[index].getActualLaborDay()+
-        "\n9. Working Parts  :" +listEmployees[index].getWorkingParts()
+        +"\n. Employees Name :" +listEmployees[index].getEmployeesName()+
+        "\n. Birthday Employees  :" +listEmployees[index].getBirthdayEmployees()+
+        "\n. Is Card Employees  :" +listEmployees[index].getIsCardEmployees()+
+        "\n. Phone NumberEmployees  :" +listEmployees[index].getPhoneNumberEmployees()+
+        "\n. Phone Email Employees  :" +listEmployees[index].getEmailEmployees()+
+        "\n. Academic LevelEmployees  :" +listEmployees[index].getAcademicLevelEmployees()+
+        "\n. Job Position Employees  :" +listEmployees[index].getJobPositionEmployees()+
+        "\n. Actual Labor Day  :" +listEmployees[index].getActualLaborDay()+
+        "\n. Working Parts  :" +listEmployees[index].getWorkingParts()
         );
         displayMenuEmployess();
         }
@@ -418,29 +421,29 @@ function chooseInformationEmployee() {
         console.log("-3");
         let editInfo = prompt("Information you want to change of Employees");
         switch (indexPropety) {
+            case 0:
+                listEmployees[indexEm].setEmployeesName(editInfo);
+                break;
             case 1:
-                listEmployees[indexEm].getEmployeesName(editInfo);
+                listEmployees[indexEm].setBirthdayEmployees(editInfo);
                 break;
             case 2:
-                listEmployees[indexEm].getBirthdayEmployees(editInfo);
+                listEmployees[indexEm].setIsCardEmployees(editInfo);
                 break;
             case 3:
-                listEmployees[indexEm].getIsCardEmployees(editInfo);
+                listEmployees[indexEm].setPhoneNumberEmployees(editInfo);
                 break;
-            case 4:
-                listEmployees[indexEm].getPhoneNumberEmployees(editInfo);
+                case 4:
+                listEmployees[indexEm].setEmailEmployees(editInfo);
                 break;
-                case 5:
-                listEmployees[indexEm].getEmailEmployees(editInfo);
+            case 5:
+                listEmployees[indexEm].setAcademicLevelEmployees(editInfo);
                 break;
             case 6:
-                listEmployees[indexEm].getAcademicLevelEmployees(editInfo);
+                listEmployees[indexEm].setJobPositionEmployees(editInfo);
                 break;
             case 7:
-                listEmployees[indexEm].getJobPositionEmployees(editInfo);
-                break;
-            case 8:
-                listEmployees[indexEm].getWorkingParts(editInfo);
+                listEmployees[indexEm].setWorkingParts(editInfo);
                 break;
             default:
                 alert("Failed");
